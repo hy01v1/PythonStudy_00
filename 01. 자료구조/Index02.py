@@ -73,8 +73,10 @@ members['총무팀'] = ['김승규']
 print(members)
 
 # dictionary 관련 함수 : pop, popitem
-# pop : velue를 return 하여 key-velue 쌍을 제거한다.
-# popitem : key-velue 쌍을 return 하여 제거한다.
+# pop : velue를 return 하여 key-velue 쌍을 제거한다. 1개 이상의 argument(인자)를 입력해야 한다.
+# aa.pop('인자')
+# popitem : key-velue 쌍을 return 하여 제거한다. 가장 오른쪽의 인자를 제거한다. 인자를 입력하면 애러발생한다.
+# aa.popitem()
 
 # 3. 자료구조 - set
 # set : 고유한 원소들의 묶음이다. 집합!
