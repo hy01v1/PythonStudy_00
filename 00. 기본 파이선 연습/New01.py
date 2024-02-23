@@ -5,7 +5,7 @@ import os, sys
 
 #https://www.edwith.org/basic-python/lecture/123694?isDesc=false
 #강의용
-#주석 => "#"
+#주석 => "#" 
 
 # 표준출력 함수 : print(), ('')
 # 한줄 연결 출력 : print('aa', end='as')

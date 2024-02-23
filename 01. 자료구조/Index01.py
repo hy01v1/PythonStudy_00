@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 # coding: ansi
 import os, sys
-
+ 
 # 함수 = 인자를 받아 ouyput 해주는 것
 
 a = 100
