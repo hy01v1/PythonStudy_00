@@ -1,9 +1,7 @@
-#!/usr/local/bin/python
-# coding: ansi
-import os, sys
+
 
  
-
+# 따옴표 앞에 f를 입력하면, [변수명] 문자열 안에 다른 변수를 넣을 수 있다.
 
 # 데이터를 저장하는 구조를 : 자료구조 라고 한다.
 # list : 여러 객체를 한 묶음으로 관리할 때 사용
@@ -59,3 +57,52 @@ color = [red_a, black_b, green_g, c_num]
 print(len(color))
 print(color)
 # list 안에 list 입력
+
+# 2. 자료구조 - dictionary
+# key 로 값을 찾고 싶은 경우 주로 사용한다.
+# key-value 쌍으로 이루어진 자료구조이다.
+members = {
+    '기획팀' : ['손흥민', '김민재'],
+    '사업팀' : ['박지성', '이천수'],
+    '개발팀' : ['안정환', '차두리']
+    }
+print(members['개발팀'])
+
+# item(인자)을 추가하는 경우 함수명(ex. members)에 ['총무팀']=['김승규'] 로 key-velue 를 입력해주면 된다.
+members['총무팀'] = ['김승규']
+print(members)
+
+# dictionary 관련 함수 : pop, popitem
+# pop : velue를 return 하여 key-velue 쌍을 제거한다.
+# popitem : key-velue 쌍을 return 하여 제거한다.
+
+# 3. 자료구조 - set
+# set : 고유한 원소들의 묶음이다. 집합!
+# list 와 다르게 순서에 상관하지 않는다. -> print시 무작위로 출력된다.
+# add : 집합에 원소를 추가한다.
+# remove :  집합에서 원소를 제거한다. 제거하려는 원소가 집합에 없는 경우 애러를 발생한다.
+# discard :  집합에서 원소를 제거한다. 애러가 발생하지 않는다.
+
+ss = set(['A', 'B', 'C'])
+print(ss)
+# 출력이 렌덤하다.
+
+ss.add('D')
+print(ss)
+# ss(set 자료구조)에서 'D'원소를 추가한 명령 예시
+
+ss.remove('C')
+print(ss)
+# ss에서 'C'를 remove로 제거
+
+#ss.remove('X') # : 이 명령어의 경우 애러가 표시된다.
+ss.discard('V')
+print(ss)
+# set자료구조에 없는 인자인 'V'를 제거한 명령어 : 애러가 표시 되지 않는다.
+
+
+
+
+
+
+
